@@ -146,25 +146,32 @@
     .footer-inner {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: var(--sp-3);
+      justify-content: center;
+      flex-wrap: nowrap;
+      gap: var(--sp-4);
+      text-align: center;
+    }
+
+    .footer-inner > p {
+      margin: 0;
+      white-space: nowrap;
     }
 
     .footer-links {
       display: flex;
       gap: var(--sp-5);
+      flex-shrink: 0;
     }
 
     .footer-links a {
       font-size: var(--fs-xs);
+      font-weight: var(--fw-semibold);
       color: var(--clr-text-muted);
     }
     .footer-links a:hover { color: var(--clr-text); }
 
     @media (max-width: 480px) {
       .hero-title { font-size: var(--fs-2xl); }
-      .footer-inner { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -221,7 +228,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p class="text-muted text-sm">&copy; 2026 Remembrance FM &middot; EFREI Student Project with Charles Haskell and Portsmouth University</p>
+      <p class="text-muted text-sm">&copy; 2026 Remembrance FM &middot; EFREI Student Project with Paulo Teixeira, Matthieu Rat, Frédéric Ye and Youcef Ben Nejma. And Charles Haskell and Portsmouth University</p>
       <nav class="footer-links" aria-label="Footer links">
         <a href="/admin">Admin</a>
       </nav>
