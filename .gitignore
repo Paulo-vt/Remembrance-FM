@@ -1,8 +1,8 @@
 # Dependencies — regenerated with "npm install"
-node_modules/
+**/node_modules/
 
 # Environment variables — contains passwords, never share
-.env
+**/.env
 
 # macOS system files
 .DS_Store
